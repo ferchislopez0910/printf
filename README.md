@@ -16,7 +16,8 @@ gcc -Wall -Wextra -Werror -pedantic -Wno-format *.c
 and there you go!.
 
 This is an example on how to use printf:
-main()
+
+     main()
 	{
 	int a,b;
 	float c,d;
