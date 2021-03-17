@@ -1,13 +1,20 @@
 #include "holberton.h"
 
-int _printf(const char *format,...)
+/**
+ * _printf - Prints according to data type
+ * @format: type of data
+ * Return: Return the amount of print characters
+ */
+
+int _printf(const char *format, ...)
 {
 	int count = 0;
 	int (*func_ptr)(va_list);
 
 	va_list data;
+
 	va_start(data, format);
-	
+
 	while (format && *format)
 	{
 		if (*format == '%')
@@ -31,5 +38,5 @@ int _printf(const char *format,...)
 	}
 	va_end(data);
 
-	return (count);    
+	return (count);
 }
