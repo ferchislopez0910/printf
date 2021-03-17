@@ -15,6 +15,30 @@ gcc -Wall -Wextra -Werror -pedantic -Wno-format *.c
 **./a.out** 
 and there you go!.
 
+This is an example on how to use printf:
+main()
+	{
+	int a,b;
+	float c,d;
+	a = 15;	
+	b = a / 2;
+
+	printf("%d\n",b);
+	printf("%3d\n",b);
+	printf("%03d\n",b);
+
+	c = 15.3;
+	d = c / 3;
+	printf("%3.2f\n",d);	
+	}	
+
+Output:
+
+7
+___7
+007
+5.10
+
 You can also get more information and see some examples by consulting the **man_3_printf** page, using this command:
 
 **man ./man_3_printf**
@@ -33,3 +57,4 @@ You can also get more information and see some examples by consulting the **man_
 <a href="https://www.holbertonschool.com" target="_blank">
 <img src="http://www.holbertonschool.com/holberton-logo.png" alt="Holberton School"  /></a>
 </p>
+
