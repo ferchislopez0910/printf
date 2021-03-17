@@ -19,12 +19,20 @@ int print_char(va_list data)
  */
 int print_string(va_list string)
 {
+	int count;
 	char *str_char = va_arg(string, char *);
-	int count = strlen(str_char);
 
-	write(1, str_char, count);
-
-	return (count);
+	if (*str_char && str_char)
+	{
+		count = strlen(str_char);
+		write(1, str_char, count);
+		return (count);
+	}
+	else
+	{
+		write(1, "(null)", 6);
+		return (6);
+	}
 }
 /**
  * print_porcent - print strings
