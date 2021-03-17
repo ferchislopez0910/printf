@@ -6,7 +6,7 @@
  */
 int print_integrer(va_list number)
 {
-	long num = va_arg(number, int), num_print = 0;
+	long num = va_arg(number, long), num_print = 0;
 	long digit = 1, divider10 = 10, divider = 10;
 	int condition = 1, cont = 0;
 
