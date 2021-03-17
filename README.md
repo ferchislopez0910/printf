@@ -1,4 +1,4 @@
-<img src='https://marketing4ecommerce.net/wp-content/uploads/2018/06/GitHub-logo-2-imagen.jpg' alt='Banner' width=40%>
+#<img src='https://marketing4ecommerce.net/wp-content/uploads/2018/06/GitHub-logo-2-imagen.jpg' alt='Banner' width=40%>
 
 ### 0x11. C - printf
 
@@ -15,7 +15,7 @@ gcc -Wall -Wextra -Werror -pedantic -Wno-format *.c
 **./a.out** 
 and there you go!.
 
-You can also get more information and see some examples by consulting the **man_3_printf** page following these steps:
+You can also get more information and see some examples by consulting the **man_3_printf** page following these steps!
 
 ## Authors :black_nib:
 
