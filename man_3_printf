@@ -50,21 +50,21 @@ Returns the amount of characters printed on screen.
 .SH 	a = 15;
 .SH 	b = a / 2;
 
-.SH 	printf("%d\n",b);
-.SH 	printf("%3d\n",b);
-.SH 	printf("%03d\n",b);
+.SH 	_printf("%d\n",b);
+.SH 	_printf("%3d\n",b);
+.SH 	_printf("%03d\n",b);
 
 .SH 	c = 15.3;
 .SH 	d = c / 3;
-.SH 	printf("%3.2f\n",d);
+.SH 	_printf("%3.2f\n",d);
 .SH 	}	
 
 .SH Output:
 
-.SH 7
-.SH ___7
-.SH 007
-.SH 5.10   
+.SH	7
+.SH 	___7
+.SH 	007
+.SH 	5.10   
 
 .SH AUTHOR
 Written by Marcela Areiza, Maria Fernanda Lopez, Christian Martinez.
