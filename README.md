@@ -1,11 +1,11 @@
-#<img src='https://marketing4ecommerce.net/wp-content/uploads/2018/06/GitHub-logo-2-imagen.jpg' alt='Banner' width=40%>
+#<p aling="center"><img src='https://marketing4ecommerce.net/wp-content/uploads/2018/06/GitHub-logo-2-imagen.jpg' alt='Banner' width=40%></p>
 
 ### 0x11. C - printf
 
 ## Printf 
 The **_printf** function prints a message to the screen using a "format string" that includes instructions to mix multiple strings into the final string to be displayed on the screen using the files described below:
 
-<img src='https://github.com/felipevargas-bz/printf_pruebas/blob/main/PrintF%20(2).jpg' alt='Banner' width=50%>
+<p aling="center"><img src='https://github.com/felipevargas-bz/printf_pruebas/blob/main/PrintF%20(2).jpg' alt='Banner' width=50%></p>
 
 To use _printf you must download the files contained in this repository done this you must create a main.c containing the characters you want to print naming the function as follows
 **_printf("This is what I want to print");** 
@@ -15,7 +15,8 @@ gcc -Wall -Wextra -Werror -pedantic -Wno-format *.c
 **./a.out** 
 and there you go!.
 
-You can also get more information and see some examples by consulting the **man_3_printf** page following these steps!
+You can also get more information and see some examples by consulting the **man_3_printf** page, using this command:
+## *man ./man_3_printf
 
 ## Authors :black_nib:
 
