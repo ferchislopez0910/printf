@@ -2,11 +2,14 @@
 
 ### 0x11. C - printf
 
-**Printf** 
-*prints a string, and does it one at a time and if it finds a % specifier it knows it has a format.*
-*Then it goes to the second argument and prints it.*
-*It keeps printing the rest of the string one at a time.*
+##Printf 
+The **_printf** function prints a message to the screen using a "format string" that includes instructions to mix multiple strings into the final string to be displayed on the screen using the files described below:
 
+<img src='https://github.com/felipevargas-bz/printf_pruebas/blob/main/PrintF%20(2).jpg' alt='Banner' width=50%>
+
+To use _printf you must download the files contained in this repository done this you must create a main.c containing the characters you want to print naming the function as follows **_printf("This is what I want to print");** compile your program like this **gcc -Wall -Wextra -Werror -pedantic -Wno-format *.c** done this you can print using **./a.out** and there you go!.
+
+You can also get more information and see some examples by consulting the **man_3_printf** page following these steps:
 
 ## Authors :black_nib:
 
