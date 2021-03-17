@@ -6,16 +6,15 @@
  */
 int print_integrer(va_list number)
 {
-	long num = va_arg(number, long), num_print = 0;
-	long digit = 1, divider10 = 10, divider = 10;
-	int condition = 1, cont = 0;
+	int num = va_arg(number, int); 
+	long digit = 1, divider10 = 10, divider = 10, condition = 1, cont = 0, num_print = 0;
 
 	if (num < 0)
 	{	num = -1 * num;
 		write(1, "-", 1);
 		cont++;
 	}
-	if (num > 10)
+	if (num >= 10)
 	{
 		while (condition)
 		{

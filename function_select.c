@@ -3,7 +3,7 @@
 /**
  * function_select - Structure
  * @character: ptr
- * Return: Always 0
+ * Return: Always.
  */
 
 int (*function_select(const char *character))(va_list)

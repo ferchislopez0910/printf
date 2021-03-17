@@ -6,11 +6,18 @@
  */
 int print_char(va_list data)
 {
-	int character = (char)va_arg(data, int);
+    int character = (char)va_arg(data, int);
 
-	write(1, &character, 1);
+    if (character != 0)
+    {
+        write(1, &character, 1);
 
-	return (1);
+        return (1);
+    }
+    else
+    {
+        return (0);
+    }
 }
 /**
  * print_string - print strings
@@ -19,21 +26,24 @@ int print_char(va_list data)
  */
 int print_string(va_list string)
 {
-	int count;
-	char *str_char = va_arg(string, char *);
+    char *str = va_arg(string, char *);
 
-	if (*str_char && str_char)
-	{
-		count = strlen(str_char);
-		write(1, str_char, count);
-		return (count);
-	}
-	else
-	{
-		write(1, "(null)", 6);
-		return (6);
-	}
+    if (str && *str)
+    {
+        int count = strlen(str);
+
+        write(1, str, count);
+
+        return (count);
+    }
+    else
+    {
+        write(1, "(null)", 6);
+
+        return (6);
+    }
 }
+
 /**
  * print_porcent - print strings
  * @porcent: percentage
@@ -46,4 +56,6 @@ int print_porcent(va_list porcent)
 	write(1, "%", 1);
 
 	return (1);
+
+	
 }
