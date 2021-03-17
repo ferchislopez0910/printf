@@ -1,11 +1,16 @@
 #include "holberton.h"
 
+/**
+ * function_select - Structure
+ * @character: ptr
+ * Return: Always 0
+ */
+
 int (*function_select(const char *character))(va_list)
 {
 	int i = 0;
 
-	for_print functions[] = 
-	{
+	for_print functions[] = {
 		{"c", print_char},
 		{"s", print_string},
 		{"%", print_porcent},
