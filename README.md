@@ -34,10 +34,10 @@ main()
 
 Output:
 
-7
-___7
-007
-5.10
+	7	
+	___7
+	007
+	5.10
 
 You can also get more information and see some examples by consulting the **man_3_printf** page, using this command:
 
