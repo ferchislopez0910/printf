@@ -1,0 +1,66 @@
+.TH man 3 "16 March 2021" "0.01" "_printf man page" 
+.SH NAME
+_printf - format and print data according to a format specifier
+.SH SYNOPSIS
+printf FORMAT [ARGUMENT]... The "holberton.h" header file is needed to use this function.
+.SH DESCRIPTION
+Print ARGUMENT(s) according to FORMAT.
+.SH FORMAT
+controls the output as in C printf.  Interpreted sequences are:
+.SH \      escape the next character
+.SH \\     print a backslash
+.SH "      start or end of string
+.SH \"     print a double quote
+.SH \'     print a single quote
+.SH %      start a format specification
+.SH \%     print a percent sign
+.SH \"     double quote
+.SH \\     backslash
+.SH %%     a single %
+.SH %c     print specified character (char)
+.SH %s     print specified string of characters
+.SH %d     print specified decimal (integer) number (base 10)
+.SH %i     print specified integer (base 10)
+.SH WIDTH
+By saying %5d the number is guaranteed to take up five spaces. Notice that for shorter numbers, the result is padded out with leading spaces. For excessively long numbers there is no padding, and the full number is printed.
+.SH ("%5d",0)      ____0
+.SH ("%5d",-7)     ___-7
+.SH ("%5d",1560133635)     1560133635
+.SH ("%5d",-2035065302)     -2035065302
+.SH RETURN
+Returns the amount of characters printed on screen.
+.SH EXAMPLES
+.SH _printf("This is an example sentence.\n");
+.SH Output = This is an example sentence.
+.SH _printf("This prints an integer:[%d, %i]\n", integer, integer);
+.SH Output = This prints an integer:[39, 39]
+.SH _printf("This is a character:[%c]\n", 'J')
+.SH Output = This is a character: J
+.SH #include<stdio.h>
+
+.SH main()
+.SH {
+.SH int a,b;
+.SH float c,d;
+.SH a = 15;
+.SH b = a / 2;
+.SH printf("%d\n",b);
+.SH printf("%3d\n",b);
+.SH printf("%03d\n",b);
+.SH c = 15.3;
+.SH d = c / 3;
+.SH printf("%3.2f\n",d);
+.SH }
+
+.SH Output:
+.SH 7
+.SH ___7
+.SH 007
+.SH 5.10   
+
+.SH AUTHOR
+Written by Marcela Areiza, Maria Fernanda Lopez, Christian Martinez.
+.SH DATE
+Written in March 16th, 2021.
+.SH COPYRIGHT
+It currently doesn't have any copywright license registered.
