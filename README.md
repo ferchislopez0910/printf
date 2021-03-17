@@ -15,7 +15,7 @@ gcc -Wall -Wextra -Werror -pedantic -Wno-format *.c
 **./a.out** 
 and there you go!.
 
-This is an example on how to use printf:
+This is an example on how to use _printf:
 
      main()
 	{
@@ -24,13 +24,13 @@ This is an example on how to use printf:
 	a = 15;	
 	b = a / 2;
 
-	printf("%d\n",b);
-	printf("%3d\n",b);
-	printf("%03d\n",b);
+	_printf("%d\n",b);
+	_printf("%3d\n",b);
+	_printf("%03d\n",b);
 
 	c = 15.3;
 	d = c / 3;
-	printf("%3.2f\n",d);	
+	_printf("%3.2f\n",d);	
 	}	
 
 Output:
