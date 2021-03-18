@@ -29,12 +29,12 @@ int _printf(const char *format, ...)
 				format++;
 			}
 		}
-		if (*format != '%')
+		if (*format != '\0')
 		{
 			write(1, format, 1);
 			count++;
+			format++;
 		}
-		format++;
 	}
 	va_end(data);
 
