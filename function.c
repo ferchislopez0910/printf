@@ -25,19 +25,23 @@ int print_char(va_list data)
  */
 int print_string(va_list string)
 {
+	int cont;
 	char *str = va_arg(string, char *);
 
 	if (str && *str)
 	{
-		int count = strlen(str);
-
-		write(1, str, count);
-		return (count);
+		cont = strlen(str);
+		write(1, str, cont);
+		return (cont);
 	}
-	else
+	if (str == NULL)
 	{
 		write(1, "(null)", 6);
 		return (6);
+	}
+	else
+	{
+		return (0);
 	}
 }
 
