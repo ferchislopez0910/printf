@@ -8,12 +8,15 @@
 
 int _printf(const char *format, ...)
 {
-	int count = 0;
+	int count = 0, run = 0;
 	int (*func_ptr)(va_list);
 
 	va_list data;
 
 	va_start(data, format);
+
+	if (format == '\0')
+		return (-1);
 
 	while (format && *format)
 	{
@@ -32,11 +35,9 @@ int _printf(const char *format, ...)
 				count++;
 			}
 			if (*format != '%')
-			{
 				format++;
-			}
 		}
-		if (*format != '\0')
+		if (*format != '%' && *format != '\0')
 		{
 			write(1, format, 1);
 			count++;
@@ -44,6 +45,5 @@ int _printf(const char *format, ...)
 		}
 	}
 	va_end(data);
-
 	return (count);
 }
