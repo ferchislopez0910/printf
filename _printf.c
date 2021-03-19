@@ -25,8 +25,15 @@ int _printf(const char *format, ...)
 				count += func_ptr(data);
 				format++;
 			}
+			else
+			{
+				write(1,format - 1, 1);
+				count++;
+				write(1, format, 1);
+				count++;
+			}
 		}
-		if (*format != '\0')
+		if (*format != '\0' && *format != '%')
 		{
 			write(1, format, 1);
 			count++;
