@@ -15,10 +15,14 @@ int _printf(const char *format, ...)
 
 	va_start(data, format);
 
+	if (format == NULL)
+		return (0);
 	while (format && *format)
 	{
 		if (*format == '%')
 		{
+			if (*(format + 1) == '\0')
+				return (-1);
 			func_ptr = function_select(++format);
 			if (*func_ptr)
 			{
@@ -31,6 +35,7 @@ int _printf(const char *format, ...)
 				count++;
 				write(1, format, 1);
 				count++;
+				format++;
 			}
 		}
 		if (*format != '\0' && *format != '%')
