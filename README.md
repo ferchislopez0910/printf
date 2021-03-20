@@ -14,7 +14,6 @@ gcc -Wall -Wextra -Werror -pedantic -Wno-format *.c
  - done this you can print using
 
 **./a.out** 
-
 and there you go!.
 
 This is an example on how to use _printf:
