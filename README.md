@@ -9,11 +9,8 @@ The **_printf** function prints a message to the screen using a "format string" 
 
 To use _printf you must download the files contained in this repository done this you must create a main.c containing the characters you want to print naming the function as follows
 **_printf("This is what I want to print");** 
- 
  - compile your program like this
-
 _gcc -Wall -Wextra -Werror -pedantic -Wno-format *.c_
-
  - done this you can print using
 
 **./a.out** 
