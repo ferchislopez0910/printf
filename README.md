@@ -11,7 +11,8 @@ To use _printf you must download the files contained in this repository done thi
 **_printf("This is what I want to print");** 
  - compile your program like this 
 gcc -Wall -Wextra -Werror -pedantic -Wno-format *.c
- - done this you can print using 
+ - done this you can print using
+ 
 **./a.out** 
 and there you go!.
 
